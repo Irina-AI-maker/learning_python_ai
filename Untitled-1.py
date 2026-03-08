@@ -1,4 +1,4 @@
-favorite_language=' Python '
-print(f"{favorite_language}")
-print(f"'{favorite_language.rstrip()}'")
-print(f"'{favorite_language.lstrip()}'")
+nostarch_url = 'https://nostarch.com'
+print(nostarch_url.removeprefix('https://'))
+
+
