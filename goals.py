@@ -1,5 +1,5 @@
-ai_goals=["нейросети","алгоритмы","данные"]
-for goal in ai_goals:
-    print(f"Я стану мастером в теме: {goal.title()}")  
-    print(f"Я архитектор смыслов в {goal.title()}.\n")
-print("Все цели поставлены. Время действовать, архитектор!")
+squares = []
+for value in range(1, 11):
+    square = value ** 2
+    squares.append(square)
+    print(squares)
