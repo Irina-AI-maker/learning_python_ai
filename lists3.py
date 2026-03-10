@@ -1,0 +1,25 @@
+import streamlit as st
+discovered_concepts=[]
+discovered_concepts.append('логика')
+discovered_concepts.append('веса')
+discovered_concepts.append('слои')
+st.write (discovered_concepts)
+#вставляем на первое место (индекс 0, "математика")
+discovered_concepts.insert(0, "математика")
+#вставляем на третье место(индекс 2)
+discovered_concepts.insert(2, "данные")
+st.write("Обновленный список концептов:")
+st.write(discovered_concepts)
+del discovered_concepts[0]
+st.write(discovered_concepts)
+active_task = discovered_concepts.pop()
+st.write(f"Сейчас в активной разработке: {active_task.upper()}")
+discovered_concepts.remove('логика')
+st.write(discovered_concepts)
+discovered_concepts.remove("веса")
+st.write(discovered_concepts)
+discovered_concepts.append("нейроны")
+st.write(discovered_concepts)
+not_needed="данные"
+discovered_concepts.remove(not_needed)
+st.write(discovered_concepts)
